@@ -14,8 +14,19 @@ public class MockRestaurantMenu
             new MenuItem(6, 1, "I love you from my head tomatoes", R.drawable.ic_menu_share, 8.00),
             new MenuItem(7, 1, "So cheesy", R.drawable.ic_menu_share, 8.00),
             new MenuItem(8, 1, "Move Over, There Isn't Mushroom", R.drawable.ic_menu_share, 8.00),
-            new MenuItem(9, 1, "I Love You From My Head Tomatoes", R.drawable.ic_menu_share, 8.00)
+            new MenuItem(9, 1, "I Love You From My Head Tomatoes", R.drawable.ic_menu_share, 8.00),
+            new MenuItem(10, 1, "Prawn Avocado Sesame Rice", R.drawable.ic_menu_share, 8.00),
+            new MenuItem(11, 1, "Roast Chicken Feta", R.drawable.ic_menu_share, 8.00),
+            new MenuItem(12, 1, "Caesar Salad ", R.drawable.ic_menu_share, 8.00),
+            new MenuItem(13, 1, "Teriyaki Chicken Noodle", R.drawable.ic_menu_share, 8.00),
+            new MenuItem(14, 1, "Tropical Chicken", R.drawable.ic_menu_share, 8.00),
+            new MenuItem(15, 1, "I love you from my head tomatoes", R.drawable.ic_menu_share, 8.00),
+            new MenuItem(16, 1, "So cheesy", R.drawable.ic_menu_share, 8.00),
+            new MenuItem(17, 1, "Move Over, There Isn't Mushroom", R.drawable.ic_menu_share, 8.00),
+            new MenuItem(18, 1, "I Love You From My Head Tomatoes", R.drawable.ic_menu_share, 8.00)
     };
+
+
 
     public MenuItem[] data()
     {
