@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">FoodUp</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -7,5 +7,6 @@
     <string name="action_settings">Settings</string>
     <string name="restaurant_key">restaurant_id</string>
 
-    <string name="price"></string>
+    <string name="menu_item_price">(from $<xliff:g id="price">%1.0f</xliff:g>)</string>
+    <string name="item_price">$<xliff:g id="price">%1$.0f</xliff:g></string>
 </resources>

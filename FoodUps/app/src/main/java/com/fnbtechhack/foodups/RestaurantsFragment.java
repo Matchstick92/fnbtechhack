@@ -11,19 +11,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.fnbtechhack.foodups.data.MockRestaurantsData;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class RestaurantsFragment extends android.support.v4.app.Fragment
 {
     private static final String LOG_TAG = RestaurantsFragment.class.getSimpleName();
-
-    // fixed items for demo
-    private RestaurantItem[] mRestaurants = {
-            new RestaurantItem(1, "SLIM BOYZ", R.drawable.restauranta, "Western", "Dhoby Ghaut"),
-            new RestaurantItem(2, "Restaurant B", R.drawable.restaurantb, "Korean", "Dhoby Ghaut"),
-            new RestaurantItem(3, "Restaurant C", R.drawable.restaurantc, "Japanese", "Dhoby Ghaut")
-    };
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -36,6 +31,9 @@ public class RestaurantsFragment extends android.support.v4.app.Fragment
                              Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.fragment_restaurant, container, false);
+
+        MockRestaurantsData obj = new MockRestaurantsData();
+        RestaurantItem[] mRestaurants = obj.MockData();
 
         // populate fragment with listView of restaurants
         ListView restaurants = (ListView) view.findViewById(R.id.restaurant_list);
