@@ -29,7 +29,7 @@ public class MenuItemAdapter extends ArrayAdapter<MenuItem>
         public ViewHolder(View view)
         {
             name = (TextView) view.findViewById(R.id.restaurant_name_textview);
-            price = (TextView) view.findViewById(R.id.menu_item_pricing);
+            price = (TextView) view.findViewById(R.id.restaurant_menu_item_pricing);
         }
     }
 
