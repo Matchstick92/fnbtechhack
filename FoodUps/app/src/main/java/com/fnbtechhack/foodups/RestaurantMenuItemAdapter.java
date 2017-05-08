@@ -6,15 +6,20 @@ import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class RestaurantMenuItemAdapter
+public class RestaurantMenuItemAdapter extends ArrayAdapter<MenuItem>
 {
+    /*****************************************
+     * Reuses menu item class
+     *****************************************
+     */
     private int mResource;
-    public RestaurantItemAdapter(@NonNull Context context, @LayoutRes int resource, ArrayList<RestaurantItem> items)
+    public RestaurantMenuItemAdapter(@NonNull Context context, @LayoutRes int resource, ArrayList<MenuItem> items)
     {
         super(context, resource, items);
         mResource = resource;
@@ -23,37 +28,34 @@ public class RestaurantMenuItemAdapter
     public static class ViewHolder
     {
         public final TextView name;
-        public final ImageView image;
-        public final TextView cuisine;
+        public final TextView price;
 
         public ViewHolder(View view)
         {
-            name = (TextView) view.findViewById(R.id.restaurant_name_textview);
-            image = (ImageView) view.findViewById(R.id.restaurant_image);
-            cuisine = (TextView) view.findViewById(R.id.restaurant_cuisine_textview);
+            name = (TextView) view.findViewById(R.id.restaurant_menu_item_name);
+            price = (TextView) view.findViewById(R.id.restaurant_menu_item_pricing);
         }
     }
 
     @Override
     public View getView(int position, View convert, ViewGroup parent)
     {
-        RestaurantItem item = getItem(position);
+        MenuItem item = getItem(position);
 
-        RestaurantItemAdapter.ViewHolder view;
+        RestaurantMenuItemAdapter.ViewHolder view;
         if(convert == null)
         {
             convert = LayoutInflater.from(getContext()).inflate(mResource, parent, false);
-            view = new RestaurantItemAdapter.ViewHolder(convert);
+            view = new RestaurantMenuItemAdapter.ViewHolder(convert);
             convert.setTag(view);
         }
         else
         {
-            view = (RestaurantItemAdapter.ViewHolder) convert.getTag();
+            view = (RestaurantMenuItemAdapter.ViewHolder) convert.getTag();
         }
 
         view.name.setText(item.name);
-        view.cuisine.setText(item.cuisine);
-        view.image.setImageResource(item.image);
+        view.price.setText(getContext().getString(R.string.menu_item_price, item.price));
 
         return convert;
     }

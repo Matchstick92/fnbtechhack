@@ -25,22 +25,5 @@
 
         </FrameLayout>
     </LinearLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="0dp"
-        android:background="@color/colorPrimary">
-
-        <ListView
-            android:id="@+id/main_options"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_alignParentBottom="true"
-            android:choiceMode="singleChoice" />
-
-    </RelativeLayout>
 
 </android.support.v4.widget.DrawerLayout>

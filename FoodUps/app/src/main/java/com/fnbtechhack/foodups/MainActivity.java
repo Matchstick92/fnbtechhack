@@ -28,8 +28,7 @@ public class MainActivity extends AppCompatActivity
         if(savedInstanceState == null)
         {   // load summary fragment for the shop
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.main_container, new RestaurantsFragment(), INIT_TAG)
-                    .commit();
+                    .add(R.id.main_container, new RestaurantsFragment(), INIT_TAG).commit();
         }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -49,12 +48,14 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onOptionsItemSelected(android.view.MenuItem item)
     {
+        Log.v(LOG_TAG, "Selecting item.");
         int id = item.getItemId();
+        Log.v(LOG_TAG, "Selected ID is " + id);
         if (id == R.id.action_settings)
         {
             return true;
         }
-        else if (id == android.R.id.home)
+        else if (id == R.id.home)
         {
             Log.v(LOG_TAG, "Attempting to pop backstack");
             getSupportFragmentManager().popBackStackImmediate();
