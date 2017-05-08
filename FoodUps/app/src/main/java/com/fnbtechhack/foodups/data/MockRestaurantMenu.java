@@ -15,15 +15,15 @@ public class MockRestaurantMenu
             new MenuItem(7, 1, "So cheesy", R.drawable.ic_menu_share, 7.00),
             new MenuItem(8, 1, "Move Over, There Isn't Mushroom", R.drawable.ic_menu_share, 10.00),
             new MenuItem(9, 1, "I Love You From My Head Tomatoes", R.drawable.ic_menu_share, 7.00),
-            new MenuItem(10, 1, "Prawn Avocado Sesame Rice", R.drawable.ic_menu_share, 12.00),
-            new MenuItem(11, 1, "Roast Chicken Feta", R.drawable.ic_menu_share, 10.00),
-            new MenuItem(12, 1, "Caesar Salad ", R.drawable.ic_menu_share, 11.00),
-            new MenuItem(13, 1, "Teriyaki Chicken Noodle", R.drawable.ic_menu_share, 10.00),
-            new MenuItem(14, 1, "Tropical Chicken", R.drawable.ic_menu_share, 11.00),
-            new MenuItem(15, 1, "Western Bacon Cheeseburger", R.drawable.ic_menu_share, 14.00),
-            new MenuItem(16, 1, "chili Cheeseburger", R.drawable.ic_menu_share, 11.00),
-            new MenuItem(17, 1, "Guacamole Bacon Cheeseburger", R.drawable.ic_menu_share, 12.00),
-            new MenuItem(18, 1, "Portobello Mushroom Burger", R.drawable.ic_menu_share, 11.00)
+            new MenuItem(10, 2, "Prawn Avocado Sesame Rice", R.drawable.ic_menu_share, 12.00),
+            new MenuItem(11, 2, "Roast Chicken Feta", R.drawable.ic_menu_share, 10.00),
+            new MenuItem(12, 2, "Caesar Salad ", R.drawable.ic_menu_share, 11.00),
+            new MenuItem(13, 2, "Teriyaki Chicken Noodle", R.drawable.ic_menu_share, 10.00),
+            new MenuItem(14, 2, "Tropical Chicken", R.drawable.ic_menu_share, 11.00),
+            new MenuItem(15, 3, "Western Bacon Cheeseburger", R.drawable.ic_menu_share, 14.00),
+            new MenuItem(16, 3, "chili Cheeseburger", R.drawable.ic_menu_share, 11.00),
+            new MenuItem(17, 3, "Guacamole Bacon Cheeseburger", R.drawable.ic_menu_share, 12.00),
+            new MenuItem(18, 3, "Portobello Mushroom Burger", R.drawable.ic_menu_share, 11.00)
     };
 
 
